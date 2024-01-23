@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|public|FusionCharts|upload|assets|ajaxgallery|thum|css|js|cssm|jsm|pdfs|imagenes|images|swf|txt|xml|lib|img|cors|thumbnails|files|robots\.txt)
