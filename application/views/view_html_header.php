@@ -11,6 +11,9 @@
         <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
         <!-- Fontawesome -->
         <link href="<?php echo base_url('assets/css/fontawesome.min.css'); ?>" rel="stylesheet">
+        <!-- DataTables -->
+        <link href="<?php echo base_url('assets/css/datatables.min.css'); ?>" rel="stylesheet">
+        <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
         <!-- Favicon -->
         <link rel="icon" href="<?php echo base_url('favicon.ico'); ?>">
 
