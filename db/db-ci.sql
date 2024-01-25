@@ -29,7 +29,7 @@ CREATE TABLE estatus_perfil(
   PRIMARY KEY(id_estatus)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
-INSERT INTO estatus_perfil (nombre) VALUES ('Activo'),('Inactivo');
+INSERT INTO estatus_perfil (nombre) VALUES ('Activo'),('Inactivo'),('Baja');
 
 CREATE TABLE cuentas(
   id_cuenta INT NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ CREATE TABLE perfiles(
   telefono VARCHAR(10) NOT NULL,
   direccion INT NOT NULL,
   tipo_perfil INT NOT NULL,
-  estatus INT NOT NULL,
+  estatus INT NOT NULL DEFAULT 1,
   registro DATETIME DEFAULT CURRENT_TIMESTAMP(),
   PRIMARY KEY(id_perfil),
   FOREIGN KEY(cuenta) REFERENCES cuentas(id_cuenta),

@@ -12,6 +12,6 @@
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/datatables.min.js'); ?>"></script>
-
+<script type="text/javascript" src="<?php echo base_url('assets/js/functions/reportsFunctions.js'); ?>"></script>
 </body>
 </html>

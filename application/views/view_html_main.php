@@ -15,7 +15,10 @@
                 </div>
                 <div class="card-body">
                     <i class="fas fa-users fa-5x mb-4 text-muted"></i>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Agregar Usuarios</button>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary" 
+                    data-toggle="modal" data-target="#modalInsert">
+                        Agregar Usuarios
+                    </button>
                 </div>
             </div>
         </div>
@@ -26,7 +29,10 @@
                 </div>
                 <div class="card-body">
                     <i class="fas fa-chart-line fa-5x mb-4 text-muted"></i>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Ver Reportes</button>
+                    <button type="button" class="w-100 btn btn-lg btn-primary" 
+                    onclick="window.location.href='<?php echo base_url('index.php/reports'); ?>'">
+                        Ver Reportes
+                    </button>
                 </div>
             </div>
         </div>

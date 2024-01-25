@@ -16,6 +16,25 @@ class General_model extends CI_Model {
         }
     }
 
+    public function get_joins($table, $joins,  $select = '*', $where = NULL, $or_where = NULL){
+
+        $this->db->select($select);
+
+        foreach($joins as $join){
+            $this->db->join($join['table'], $join['condition'], $join['type']);
+        }
+        
+        if(!empty($where)){
+            $this->db->where($where);
+        }
+
+        if (!empty($or_where)) {
+            $this->db->or_where($or_where);
+        }
+
+        return $this->db->get($table)->result();
+    }
+
     public function get_where_in($table, $condicion, $array, $orderby = NULL) {
 
         $this->db->where_in($condicion, $array);
